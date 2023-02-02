@@ -36,4 +36,5 @@ build/
 .env
 
 ### Other files ###
+.DS_Store
 .application.properties
