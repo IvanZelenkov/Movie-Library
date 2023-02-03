@@ -1,4 +1,5 @@
 import React from 'react';
+import { Box } from "@mui/material";
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 
@@ -7,7 +8,7 @@ const Trailer = () => {
 	let key = params.youTubeTrailerId;
 
 	return (
-		<div style={{ height: "90vh" }}>
+		<Box style={{ height: "90vh" }}>
 			{key != null ?
 				(
 					<ReactPlayer
@@ -19,7 +20,7 @@ const Trailer = () => {
 				) :
 				null
 			}
-		</div>
+		</Box>
 	);
 }
 

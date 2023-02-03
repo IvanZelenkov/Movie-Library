@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Trailer from './components/Trailer';
 import Reviews from './components/Reviews';
 import NotFoundError from './components/NotFoundError';
+import WatchList from "./components/WatchList";
 
 function App() {
 	const [movies, setMovies] = useState();
@@ -48,11 +49,11 @@ function App() {
 						element={<Home movies={movies}/>}
 					/>
 					<Route
-						path="/Trailer/:youTubeTrailerId"
+						path="/trailer/:youTubeTrailerId"
 						element={<Trailer/>}
 					/>
 					<Route
-						path="/Reviews/:movieId"
+						path="/reviews/:movieId"
 						element ={
 							<Reviews
 								getMovieData={getMovieData}
@@ -60,6 +61,10 @@ function App() {
 								reviews={reviews}
 								setReviews={setReviews}
 							/>}
+					/>
+					<Route
+						path="/watchList"
+						element={<WatchList movies={movies}/>}
 					/>
 					<Route
 						path="*"

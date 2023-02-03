@@ -1,17 +1,17 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVideoSlash } from "@fortawesome/free-solid-svg-icons";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
+import CameraIcon from '@mui/icons-material/Camera';
 
 const Header = () => {
 	return (
 		<Navbar bg="dark" variant="dark" expand="lg">
 			<Container fluid>
-				<Navbar.Brand href="/" style={{ "color": "gold" }}>
-					<FontAwesomeIcon icon ={faVideoSlash}/>Gold
+				<Navbar.Brand href="/" style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: "gold" }}>
+					<CameraIcon sx={{ marginRight: "0.5vw", fontSize: "3vh" }}/>
+					Movie Library
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="navbarScroll" />
 				<Navbar.Collapse id="navbarScroll">

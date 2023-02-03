@@ -36,12 +36,12 @@ const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
 
 	return (
 		<Container>
-			<Row>
+			<Row style={{ marginTop: "2vh"}}>
 				<Col><h3>Reviews</h3></Col>
 			</Row>
 			<Row className="mt-2">
 				<Col>
-					<img src={movie?.poster} alt=""/>
+					<img src={movie?.poster} alt="" style={{ borderRadius: "3%" }}/>
 				</Col>
 				<Col>
 					{

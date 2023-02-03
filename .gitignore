@@ -37,4 +37,4 @@ build/
 
 ### Other files ###
 .DS_Store
-.application.properties
+application.yml
